@@ -1,0 +1,4 @@
+---
+layout: document
+type: creditnota
+---
