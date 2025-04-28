@@ -3,6 +3,7 @@
 .bundle/
 .sass-cache/
 .idea
+**.gem
 
 Gemfile.lock
 vendor/
