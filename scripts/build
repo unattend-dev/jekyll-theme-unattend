@@ -1,0 +1,6 @@
+﻿#!/bin/sh
+
+set -e
+
+echo "Building example site..."
+bundle exec jekyll build --config _config_theme_dev.yml

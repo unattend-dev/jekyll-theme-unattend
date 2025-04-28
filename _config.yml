@@ -1,0 +1,30 @@
+﻿# title: Unattend theme for Jekyll
+# author:
+#   name: Jan Lesage
+#   email: jan.lesage@unattend.dev
+# 
+# description: >
+#   Write an awesome description for your new site here. You can edit this line
+#   in _config.yml. It will appear in your document head meta (for Google search
+#   results) and in your feed.xml site description.
+# 
+# theme: unattend
+# 
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
+# 
+# sass:
+#   quiet_deps: true
+#   silence_deprecations: [import]
+# 
+# unattend:
+#   skin: classic
+#   nav_pages:
+#     - about.md
+#   show_excerpts: false
+#   # date_format: "%b-%d-%Y"
+#   social_links:
+#     - title: Unattend Theme repository at GitHub
+#       icon: github
+#       url: "https://github.com/unattend-dev/jekyll-theme-unattend"
