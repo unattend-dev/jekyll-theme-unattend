@@ -1,15 +1,27 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-{%- include head.html -%}
+<head>
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" id="main-stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    {%- include head.html -%}
+</head>
+
 <body>
-<div class="container">
-{%- include header.html -%}
-<main class="page-content" aria-label="Content">
-    <div class="wrapper">
-        {{ content }}
-    </div>
-</main>
-{%- include footer.html -%}
+<div id="page-container">
+    {% if page.type %}{%- include {{ page.type }}/header.html -%}{% endif %}
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
+    {% if page.type %}{%- include {{ page.type }}/footer.html -%}{% endif %}
 </div>
 </body>
 </html>

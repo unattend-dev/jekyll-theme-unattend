@@ -1,0 +1,56 @@
+{% capture document-info %}
+<div id="order-info">
+    <label>Factuurnummer:</label>
+    12345<br/>
+    <label>Factuurdatum:</label>
+    21/05/2025<br/>
+    <label>Vervaldatum:</label>
+    21/06/2025<br/>
+</div>
+{% endcapture %}
+
+{% capture document-details %}
+<div id="invoice-details" class="row">
+    <div class="col-4">
+        <div class="invoice-contact">
+            <h2>FACTUUR</h2>
+            <div class="content">
+                <label>John Doe</label>
+                <address>
+                    Lalalastraat 1<br />
+                    8800 Roeselare<br />
+                    BELGIUM
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="invoice-contact">
+            <h2>AFLEVEREN</h2>
+            <div class="content">
+                <label>Jane Doe</label>
+                <address>
+                    Lalalastraat 13<br />
+                    8800 Roeselare<br />
+                    BELGIUM
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="invoice-contact">
+            <h2>VERKOPER</h2>
+            <div class="content">
+                <label>Unattend bv</label>
+                <address>
+                    Kempenaarstraat 16<br />
+                    8800 Roeselare<br />
+                    BELGIUM
+                </address>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+
+{% include header.html info=download-info details=document-details %}
